@@ -1,0 +1,9 @@
+<%= link_to image_tag(@post.image.variant(resize: "400x400")), @post.image %>
+ 
+<p>
+  <strong>Caption:</strong>
+  <%= @post.caption %>
+</p>
+
+<%= link_to 'Edit', edit_post_path %>
+<%= link_to 'Back', posts_path %>
